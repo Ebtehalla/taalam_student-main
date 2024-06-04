@@ -1,0 +1,9 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "java.configuration.updateBuildConfiguration": "interactive"
+}

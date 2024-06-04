@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "759146925655",
+    "firebase_url": "https://talaamapp-4a4e9-default-rtdb.firebaseio.com",
+    "project_id": "talaamapp-4a4e9",
+    "storage_bucket": "talaamapp-4a4e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759146925655:android:898c39ed8a648de371dd12",
+        "android_client_info": {
+          "package_name": "com.Talaam.student"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759146925655-0b3t7ft9pvdl067m5e402bd78pktsgb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_RKQbBiyBNftznIsAfvLVtcy60Z4I_4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759146925655-0b3t7ft9pvdl067m5e402bd78pktsgb3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759146925655-4on9sn1rnmcp2vqon9t6clgmdh6edfl2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Talaam.teach"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759146925655:android:0db3cec383eb4f7271dd12",
+        "android_client_info": {
+          "package_name": "com.Talaam.teacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759146925655-0b3t7ft9pvdl067m5e402bd78pktsgb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_RKQbBiyBNftznIsAfvLVtcy60Z4I_4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759146925655-0b3t7ft9pvdl067m5e402bd78pktsgb3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759146925655-4on9sn1rnmcp2vqon9t6clgmdh6edfl2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Talaam.teach"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

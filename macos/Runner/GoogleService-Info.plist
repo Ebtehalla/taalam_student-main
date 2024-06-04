@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>759146925655-8cihc32u1stv8c9tkprlis4gup8n341c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.759146925655-8cihc32u1stv8c9tkprlis4gup8n341c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDv1IY_OSrlbpIck5hfT2-GGek2oBPOX0E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>759146925655</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dancingwhale.halloDoctor</string>
+	<key>PROJECT_ID</key>
+	<string>talaamapp-4a4e9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>talaamapp-4a4e9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:759146925655:ios:ebb69010d1759b1f71dd12</string>
+</dict>
+</plist>
