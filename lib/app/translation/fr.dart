@@ -7,6 +7,8 @@ const Map<String, String> fr = {
   'Search Doctor': 'Rechercher un médecin',
   'View All': 'Voir tout',
   'error ': 'Erreur ',
+  'Meet link': 'Lien de rencontre',
+  'Click here': 'cliquer iciق',
   'Top Rated Doctor is empty ': 'Le médecin le mieux noté est vide ',
   'Home': 'Accueil',
   'Doctor': 'Docteur',

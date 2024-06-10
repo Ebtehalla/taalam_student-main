@@ -64,10 +64,12 @@ class TimeSlot {
       this.available,
       this.doctorid,
       this.doctor,
+      this.link,
       this.purchaseTime,
       this.status});
   String? id;
-  @JsonKey(name: 'timeSlotId')
+  @JsonKey(name: 'link')
+
   String? timeSlotId;
   @JsonKey(
       name: 'timeSlot', fromJson: _dateTimeFromJson, toJson: _dateTimeToJson)
@@ -76,6 +78,8 @@ class TimeSlot {
   int? duration;
   @JsonKey(name: 'price')
   int? price;
+  @JsonKey(name: 'link')
+  String? link;
   @JsonKey(name: 'available')
   bool? available;
   @JsonKey(name: 'doctorId')
@@ -95,14 +99,13 @@ class TimeSlot {
   DateTime? purchaseTime;
   @JsonKey(name: 'status')
   String? status;
-  factory TimeSlot.fromJson(Map<String, dynamic> json) =>
-      _$TimeSlotFromJson(json);
+
+  factory TimeSlot.fromJson(Map<String, dynamic> json) => _$TimeSlotFromJson(json);
+
   Map<String, dynamic> toJson() => _$TimeSlotToJson(this);
-  factory TimeSlot.fromFirestore(DocumentSnapshot doc) =>
-      TimeSlot.fromJson(doc.data()! as Map<String, dynamic>)..id = doc.id;
+
+  factory TimeSlot.fromFirestore(DocumentSnapshot doc) => TimeSlot.fromJson(doc.data()! as Map<String, dynamic>)..id = doc.id;
   static Map<String, dynamic>? doctorToJson(Doctor? doctor) => doctor?.toJson();
-  static DateTime? _dateTimeFromJson(Timestamp? timestamp) =>
-      timestamp?.toDate();
-  static Timestamp _dateTimeToJson(DateTime? dateTime) =>
-      Timestamp.fromDate(dateTime!);
+  static DateTime? _dateTimeFromJson(Timestamp? timestamp) => timestamp?.toDate();
+  static Timestamp _dateTimeToJson(DateTime? dateTime) => Timestamp.fromDate(dateTime!);
 }

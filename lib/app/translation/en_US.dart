@@ -7,6 +7,8 @@ Map<String, String> en = {
   'Doctor Specialist': 'Doctor Specialist',
   'Top Rated Doctor': 'Top Rated Doctor',
   'or': 'or',
+  'Meet link': 'Meet link',
+  'Click here': 'Click here',
   'Save': 'Save',
   "Online": "Online",
   "Online Teachers": "Online Teachers",

@@ -1,6 +1,7 @@
 import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../models/time_slot_model.dart';
 import '../../appointment/controllers/appointment_controller.dart';
@@ -12,12 +13,14 @@ class PaymentSuccessController extends GetxController
   late AnimationController animController;
   TimeSlot timeSlot = Get.arguments;
   var price = 0.obs;
+  RxString link = ''.obs;
   @override
   void onInit() {
     super.onInit();
-    animController =
-        AnimationController(vsync: this, duration: Duration(seconds: 3));
+    animController = AnimationController(vsync: this, duration: Duration(seconds: 3));
     price.value = timeSlot.price!;
+    link.value = timeSlot.link!;
+    print('hello + ${timeSlot.link!}');
   }
 
   @override
@@ -32,4 +35,5 @@ class PaymentSuccessController extends GetxController
     Get.find<DashboardController>().selectedIndex = 2;
     Get.find<AppointmentController>().getListAppointment();
   }
+
 }

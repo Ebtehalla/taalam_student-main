@@ -32,13 +32,16 @@ class DetailOrderController extends GetxController {
   OrderDetailModel buildOrderDetail() {
     var formatter = DateFormat('yyyy-MM-dd hh:mm');
     var time = formatter.format(selectedTimeSlot.timeSlot!);
+    var link = '';
 
     var orderDetail = OrderDetailModel(
         itemId: selectedTimeSlot.timeSlotId!,
         itemName: 'Consultation with'.tr + doctor.doctorName!,
         time: time,
         duration: selectedTimeSlot.duration.toString() + ' minute'.tr,
-        price: currencySign + selectedTimeSlot.price.toString());
+        price: currencySign + selectedTimeSlot.price.toString(),
+        link: link
+    );
     return orderDetail;
   }
 

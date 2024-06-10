@@ -11,6 +11,7 @@ TimeSlot _$TimeSlotFromJson(Map<String, dynamic> json) => TimeSlot(
       timeSlot: TimeSlot._dateTimeFromJson(json['timeSlot'] as Timestamp?),
       duration: json['duration'] as int?,
       price: json['price'] as int?,
+      link: json['link'] ?? 'null',
       available: json['available'] as bool?,
       doctorid: json['doctorId'] as String?,
       doctor: json['doctor'] == null
@@ -25,6 +26,7 @@ TimeSlot _$TimeSlotFromJson(Map<String, dynamic> json) => TimeSlot(
 
 Map<String, dynamic> _$TimeSlotToJson(TimeSlot instance) => <String, dynamic>{
       'timeSlotId': instance.timeSlotId,
+      'link': instance.link,
       'timeSlot': TimeSlot._dateTimeToJson(instance.timeSlot),
       'duration': instance.duration,
       'price': instance.price,

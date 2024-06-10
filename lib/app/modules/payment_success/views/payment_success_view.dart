@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../utils/constants/constants.dart';
 import '../../../utils/constants/style_constants.dart';
@@ -9,6 +11,7 @@ import '../../../utils/styles/styles.dart';
 import '../controllers/payment_success_controller.dart';
 
 class PaymentSuccessView extends GetView<PaymentSuccessController> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,6 +83,30 @@ class PaymentSuccessView extends GetView<PaymentSuccessController> {
               children: [
                 Text('TRANSACTION DATE'.tr),
                 Text(DateTime.now().toLocal().toString())
+              ],
+            ),
+            Divider(
+              height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text('Meet link'.tr),
+                InkWell(
+                  onTap: (){
+                    if (controller.link.value != ''){
+                       final Uri uri = Uri.parse(controller.link.value);
+                       launchUrl(uri);
+                       Clipboard.setData(ClipboardData(text: controller.link.value));
+                     } else {
+                       Fluttertoast.showToast(
+                         msg: 'error '.tr,
+                         toastLength: Toast.LENGTH_LONG,
+                       );
+                     }
+                  },
+                  child: Text('Click here'.tr),
+                ),
               ],
             ),
             Divider(

@@ -11,6 +11,8 @@ const Map<String, String> ur = {
   'error ': 'error ',
   'Top Rated Doctor is empty ': 'Top Rated Doctor is empty ',
   'Home': 'Home',
+  'Meet link': 'Meet link',
+  'Click here': 'Click here',
   'Doctor': 'Doctor',
   'Appointment': 'Appointment',
   'Chat': 'Chat',

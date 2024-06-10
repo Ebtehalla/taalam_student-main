@@ -157,5 +157,9 @@ Map<String, String> ar = {
   ' will be delayed until the problem is resolved':
       ' سوف يتأخر حتى يتم حل المشكلة',
   'Please check your email for reset your password':
-      'يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك'
+      'يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك',
+  'Meet link':
+  'رابط اللقاء',
+  'Click here':
+  'انقر هنا'
 };
